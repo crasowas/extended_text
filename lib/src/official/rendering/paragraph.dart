@@ -1128,6 +1128,9 @@ class _SelectableFragment
   LayerLink? _endHandleLayerLink;
 
   @override
+  List<Rect> get boundingBoxes => <Rect>[paragraph.paintBounds];
+
+  @override
   SelectionGeometry get value => _selectionGeometry;
   late SelectionGeometry _selectionGeometry;
   void _updateSelectionGeometry() {
